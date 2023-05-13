@@ -1,0 +1,263 @@
+/* Nav Header Section */
+.left-nav {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-family: "Roboto", "Arial";
+    color: #333333;
+  }
+  
+  .logo {
+    max-height: 256px;
+    margin: 3% 3% 3% 0%;
+  }
+  
+  .tagline {
+    margin-left: 10%;
+    height: 100px;
+    text-align: left;
+    font-size: 16px;
+    font-family: "Roboto", "Arial";
+    color: #333333;
+  }
+  
+  .right-nav {
+    display: flex;
+    align-items: center;
+    margin-right: 3%;
+    padding: 1%;
+    font-size: 18px;
+    font-family: "Montserrat", "Roboto", "Arial";
+    color: #333333;
+  }
+  
+  nav {
+    height: 110px;
+    width: 100%;
+    padding: 1%;
+    margin: 0% 0%;
+    background-color: #E9EDEF;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav .nav-item {
+    margin-left: 18px;
+  }
+  
+  .heroBanner {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  .heroBanner img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .about {
+    margin-top: 1%;
+    background-color: #E9EDEF;
+    background-size: contain;
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  .micahContainer {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 24px;
+    background-color: #333333;
+  }
+  
+  .micahContainer img {
+    max-width: 50%;
+    padding: 0%;
+    z-index: 1;
+  }
+  
+  .content {
+    background-color: #E9EDEF;
+    background-size: 25%;
+    max-width: 100%;
+    margin: 1%;
+    padding: 3%;
+    font-size: 16px;
+    font-family: "Roboto", "Arial";
+    color: #333333;
+  }
+  
+  footer ul li {
+    margin: 0 10px;
+  }
+  
+  /* My UX Skills Section */
+  .flexContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .flexContainer > div {
+    width: 33%;
+    margin: 10px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+  }
+  
+  .flexContainer > div img {
+    display: block;
+    margin: auto;
+    width: 50%;
+    height: auto;
+  }
+  
+  .flexContainer > div h3 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.2em;
+  }
+  
+  .flexContainer > div p {
+    margin-top: 10px;
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+  
+  .gridContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+    "myUXSkillsTitle"
+    "myUXSkills";
+  }
+  
+  /* My Work Section */
+  .workGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "work1 work2"
+      "work3 work4";
+    gap: 20px;
+  }
+  
+  .work1 {
+    grid-area: work1;
+  }
+  
+  .work2 {
+    grid-area: work2;
+  }
+  
+  .work3 {
+    grid-area: work3;
+  }
+  
+  .work4 {
+    grid-area: work4;
+  }
+  
+  .work1 img,
+  .work2 img,
+  .work3 img,
+  .work4 img {
+    width: 100%;
+  }
+  
+  .work1 h4,
+  .work2 h4,
+  .work3 h4,
+  .work4 h4 {
+    margin: 10px 0;
+  }
+  
+  .work1 p,
+  .work2 p,
+  .work3 p,
+  .work4 p {
+    margin: 10px 0;
+  }
+  
+  .work1 button,
+  .work2 button,
+  .work3 button,
+  .work4 button {
+    display: block;
+    padding: 10px 20px;
+    margin: 10px auto 0;
+    border: none;
+    background-color: #6c63ff;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .work1 button:hover,
+  .work2 button:hover,
+  .work3 button:hover,
+  .work4 button:hover {
+    background-color: #5a4bd1;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .workGrid {
+      grid-template-areas:
+        "work1"
+        "work2"
+        "work3"
+        "work4";
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
+    
+    .work1,
+    .work2,
+    .work3,
+    .work4 {
+      width: 100%;
+    }
+    
+    .work1 button,
+    .work2 button,
+    .work3 button,
+    .work4 button {
+      margin-top: 20px;
+    }
+  }
+  
+  /* Nav Footer Section */
+  footer {
+    background-color: #E9EDEF;
+    height: 56px;
+    padding: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-family: "Roboto", "Arial";
+    color: #333333;
+  }
+  
+  footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1px;
+    padding: 1px;
+  }
