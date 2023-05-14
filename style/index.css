@@ -34,7 +34,7 @@
   }
   
   .logo {
-    max-height: 256x;
+    max-height: 100x;
     margin: 3% 3% 3% 0%;
   }
   
@@ -76,11 +76,11 @@
   }
 
   nav {
-    height:90px;
+    height:100px;
     width: 100%;
     padding: 1%;
     margin: 0% 0%;
-    background-color: #E9EDEF;
+    background-color: #FFFFFF;
     display: flex;
     justify-content: space-between;
   }
@@ -104,7 +104,7 @@
     min-height: 100%;
     transform: translate(-50%, -50%);
   }
-  
+
   /* About Me Section */
   .about {
     margin-top: 1%;
@@ -115,6 +115,7 @@
     margin: 0 auto;
     background-repeat: no-repeat;
     background-position: center center;
+    max-height: 0 auto;
   }
   
   .micahContainer {
@@ -148,13 +149,14 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 5%;
   }
   
   .flexContainer > div {
     width: 22%;
-    margin: 7px;
-    padding: 10px;
-    background-color: #E9EDEF;
+    margin: 5px;
+    padding: 7px;
+    background-color: #F2F2F2;
   }
   
   .flexContainer > div img {
@@ -197,7 +199,7 @@
     grid-template-areas:
       "work1 work2"
       "work3 work4";
-    gap: 20px;
+    gap: 15px;
   }
   
   .work1 {
@@ -297,7 +299,7 @@
     max-width: 600px;
     margin: 0 auto;
     padding: 30px;
-    margin-bottom: 1%;
+    margin-bottom: 5%;
     border: 1px solid #ccc;
   }
   
@@ -349,12 +351,12 @@
 
   /* Nav Footer Section */
   footer {
-    background-color: #E9EDEF;
-    height: 20px;
+    background-color: #FFFFFF;
+    height:50px;
     padding: 3%;
     margin: 2px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     font-size: 14px;
     font-family: "Roboto", "Arial";
@@ -368,9 +370,19 @@
     align-items: center;
     margin: 0px;
     padding: 3px;
+    margin-right: 1%;
   }
 
     
   footer ul li {
     margin: 0 10px;
+  }
+
+  footer p {
+    list-style-type: style;
+    display: block;
+    justify-content: right;
+    align-items: center;
+    margin: 1px;
+    padding: 3px;
   }
