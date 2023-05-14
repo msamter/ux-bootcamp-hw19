@@ -1,4 +1,4 @@
-/* Nav Header Section */
+/* Animation Load Bar Section */
 .loading-bar-container {
   position: fixed;
   top: 0;
@@ -11,7 +11,7 @@
 
 .loading-bar {
   height: 100%;
-  background-color: #007bff;
+  background-color: #6c63ff;
   animation: loading-bar-animation 2s ease-in-out forwards;
 }
 
@@ -24,6 +24,7 @@
   }
 }
 
+/* Nav Header Section */
 .left-nav {
     display: flex;
     align-items: center;
@@ -33,7 +34,7 @@
   }
   
   .logo {
-    max-height: 256px;
+    max-height: 256x;
     margin: 3% 3% 3% 0%;
   }
   
@@ -75,7 +76,7 @@
   }
 
   nav {
-    height: 90px;
+    height:90px;
     width: 100%;
     padding: 1%;
     margin: 0% 0%;
@@ -88,6 +89,7 @@
     margin-left: 18px;
   }
   
+  /* Hero Image Section */
   .heroBanner {
     position: relative;
     height: 400px;
@@ -103,6 +105,7 @@
     transform: translate(-50%, -50%);
   }
   
+  /* About Me Section */
   .about {
     margin-top: 1%;
     background-color: #E9EDEF;
@@ -140,10 +143,6 @@
     color: #333333;
   }
   
-  footer ul li {
-    margin: 0 10px;
-  }
-  
   /* My UX Skills Section */
   .flexContainer {
     display: flex;
@@ -152,8 +151,8 @@
   }
   
   .flexContainer > div {
-    width: 33%;
-    margin: 10px;
+    width: 22%;
+    margin: 7px;
     padding: 10px;
     background-color: #E9EDEF;
   }
@@ -167,14 +166,18 @@
   
   .flexContainer > div h3 {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 1%;
     font-size: 1.2em;
+    padding: 1%;
   }
   
   .flexContainer > div p {
-    margin-top: 10px;
+    margin-top: 5px;
+    margin-left: 2%;
+    margin-right: 2%;
     font-size: 1em;
     line-height: 1.5em;
+    padding: 1%;
   }
   
   .gridContainer {
@@ -283,11 +286,73 @@
     }
   }
   
+  /* Contact Me */
+  h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    margin-bottom: 1%;
+    border: 1px solid #ccc;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #E9EDEF;
+    border-radius: 4px;
+  }
+  
+  textarea {
+    height: 200px;
+  }
+  
+  button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #6c63ff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #483ca3;
+  }
+  
+  button[type="submit"]:active {
+    background-color: #372d81;
+  }
+
   /* Nav Footer Section */
   footer {
     background-color: #E9EDEF;
-    height: 24px;
-    padding: 2%;
+    height: 20px;
+    padding: 3%;
+    margin: 2px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -302,5 +367,10 @@
     justify-content: center;
     align-items: center;
     margin: 0px;
-    padding: 1px;
+    padding: 3px;
+  }
+
+    
+  footer ul li {
+    margin: 0 10px;
   }
