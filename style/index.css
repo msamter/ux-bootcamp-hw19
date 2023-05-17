@@ -349,40 +349,57 @@
     background-color: #372d81;
   }
 
-  /* Nav Footer Section */
-  footer {
-    background-color: #FFFFFF;
-    height:50px;
-    padding: 3%;
-    margin: 2px;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    font-size: 14px;
-    font-family: "Roboto", "Arial";
-    color: #333333;
+  html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+display: flex;
+flex-direction: column;
+}
+
+/* Nav Footer Section */
+footer {
+  background-color: #FFFFFF;
+  height:100px;
+  padding: 20px;
+  margin-top: auto;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-size: 14px;
+  font-family: "Roboto", "Arial";
+  color: #333333;
   }
   
-  footer ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0px;
-    padding: 3px;
-    margin-right: 1%;
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  padding: 3px;
+  margin-right: 1%;
+}
+
+footer ul li {
+  margin: 0 10px;
+}
+
+footer p {
+  list-style-type: style;
+  display: block;
+  justify-content: right;
+  align-items: center;
+  margin: 1px;
+  padding: 3px;
   }
 
-    
-  footer ul li {
-    margin: 0 10px;
-  }
-
-  footer p {
-    list-style-type: style;
-    display: block;
-    justify-content: right;
-    align-items: center;
-    margin: 1px;
-    padding: 3px;
+  @media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+    .menu, .main, .right {
+        width: 100%;
+    }
   }
